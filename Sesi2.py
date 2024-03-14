@@ -13,8 +13,10 @@ Bentuk_Rumah = "|__|"
 Rumah_Kosong = [Bentuk_Rumah] * 3
 Rumah_Ayang = Rumah_Kosong.copy()
 
-Rumah_Ayang[AYANGKU_posisi - 1] = "|<3|"
+Rumah_Ayang[AYANGKU_posisi - 1] = "|_<3_|"
 
+Rumah_Kosong = ' '.join(Rumah_Kosong)
+Rumah_Ayang = ' '.join(Rumah_Ayang)
 print(f'''
 Halo {nama}! Coba perhatikan Rumah Kost ini
 {Rumah_Kosong}
