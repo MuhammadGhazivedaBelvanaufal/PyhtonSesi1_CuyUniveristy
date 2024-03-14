@@ -50,9 +50,11 @@ if confirm == "Yakin":
         print("**************************************************************************************************************************")
         print(f"COBALAGI {nama}!! Kamu salah menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
         print("**************************************************************************************************************************")
-else:
+elif confirm == "Tidak":
+    print("******************************************************")
     pilihan = int(input("Pilih dengan keyakinan penuh kali ini!! [1 / 2 / 3]: "))
     confirm = input("Konfimasi pilihan Anda [Yakin/Tidak]: ")
+    print("******************************************************")
     if confirm == "Yakin":
         if pilihan == AYANGKU_posisi:
             print("**************************************************************************************************************************")
@@ -61,4 +63,20 @@ else:
         else:
             print("**************************************************************************************************************************")
             print(f"COBALAGI {nama}!! Kamu salah menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
-            print("**************************************************************************************************************************") 
+            print("**************************************************************************************************************************")
+    else:
+        print("******************************************************")
+        pilihan = int(input("Kesempatan terakhir untuk memilih Rumah Kost AYANGKU berada!! [1 / 2 / 3]: "))
+        confirm = input("Konfimasi pilihan Anda [Yakin/Tidak]: ")
+        print("******************************************************")
+        if confirm == "Yakin":
+            if pilihan == AYANGKU_posisi:
+                print("**************************************************************************************************************************")
+                print(f"SELAMAT {nama}!! Kamu benar menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+                print("**************************************************************************************************************************")
+            else:
+                print("**************************************************************************************************************************")
+                print(f"COBALAGI {nama}!! Kamu salah menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+                print("**************************************************************************************************************************")
+else:
+    print("VASA GAMES Diberhentikan!! Silahkan Mulai Program Kembali!!")
