@@ -40,8 +40,11 @@ Halo {nama}! Coba perhatikan Rumah Kost ini
 ''')
 
 pilihan = int(input("Menurut kamu di Rumah manakah AYANGKU berada? [1 / 2 / 3]: "))
+confirm = input("Konfimasi pilihan Anda [Yakin/Tidak]: ")
 
 if pilihan == AYANGKU_posisi:
-    print(f"SELAMAT {nama}!! Kamu benar menebak posisi AYANGKU!! posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+    input = (confirm)
+    print(f"SELAMAT {nama}!! Kamu benar menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
 else:
-    print(f"COBALAGI {nama}!! Kamu salah menebak posisi AYANGKU!! posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+    input = (confirm)
+    print(f"COBALAGI {nama}!! Kamu salah menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
