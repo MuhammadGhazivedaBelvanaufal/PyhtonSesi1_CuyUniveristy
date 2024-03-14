@@ -1,3 +1,5 @@
+#SESI 4 ADALAH "MAIN" UNTUK VASAGAME DAN VASHOP
+
 from Function import WelcomeMessage, keluar_program
 from Games import VasaGame
 from Tools import Vashop
