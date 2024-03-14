@@ -74,7 +74,7 @@ while True:
     else:
         print("VASA GAMES Diberhentikan!! Silahkan Mulai Program Kembali!!")
         
-    main_lagi = input("n\nApakah Anda ingin menebak lagi? [y/n]: ")
+    main_lagi = input("\nApakah Anda ingin menebak lagi? [y/n]: ")
     if main_lagi == "n":
         break
     
