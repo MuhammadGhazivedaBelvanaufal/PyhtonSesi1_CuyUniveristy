@@ -34,17 +34,31 @@ nama = input("Masukkan nama Anda: ")
 print(f'''
 Halo {nama}! Coba perhatikan Rumah Kost ini
  _    _    _
-| |  | |  | |
+/ \  / \  / \ 
 |_|  |_|  |_|
 
 ''')
 
 pilihan = int(input("Menurut kamu di Rumah manakah AYANGKU berada? [1 / 2 / 3]: "))
 confirm = input("Konfimasi pilihan Anda [Yakin/Tidak]: ")
-
-if pilihan == AYANGKU_posisi:
-    input = (confirm)
-    print(f"SELAMAT {nama}!! Kamu benar menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+if confirm == "Yakin":
+    if pilihan == AYANGKU_posisi:
+        print("**************************************************************************************************************************")
+        print(f"SELAMAT {nama}!! Kamu benar menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+        print("**************************************************************************************************************************")
+    else:
+        print("**************************************************************************************************************************")
+        print(f"COBALAGI {nama}!! Kamu salah menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+        print("**************************************************************************************************************************")
 else:
-    input = (confirm)
-    print(f"COBALAGI {nama}!! Kamu salah menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+    pilihan = int(input("Pilih dengan keyakinan penuh kali ini!! [1 / 2 / 3]: "))
+    confirm = input("Konfimasi pilihan Anda [Yakin/Tidak]: ")
+    if confirm == "Yakin":
+        if pilihan == AYANGKU_posisi:
+            print("**************************************************************************************************************************")
+            print(f"SELAMAT {nama}!! Kamu benar menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+            print("**************************************************************************************************************************")
+        else:
+            print("**************************************************************************************************************************")
+            print(f"COBALAGI {nama}!! Kamu salah menebak posisi AYANGKU!! Posisi AYANGKU ada di {AYANGKU_posisi} dan pilihanmu adalah Rumah No.{pilihan}")
+            print("**************************************************************************************************************************") 
